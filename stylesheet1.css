@@ -1,0 +1,152 @@
+/*classes*/
+
+/*fin des classes*/
+
+/*spéciation*/
+
+/*fin spéciation*/
+
+/* début keyframe */
+
+@keyframes animation1{
+	0%{
+		opacity: 0;	
+	}
+	100%{
+		opacity: 1;		
+	}
+}
+
+@keyframes animation2{
+	0%{
+		opacity: 1;
+		transform: rotate(0);
+	}
+	10%{
+		opacity: 0.8;
+	}
+	20%{
+		opacity: 1;
+	}
+	30%{
+		opacity: 0.8;
+	}
+	40%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0.8;
+	}
+	60%{
+		opacity: 0.6;
+	}
+	70%{
+		opacity: 0.8;
+	}
+	80%{
+		opacity: 0.1;			
+	}
+	90%{
+		opacity: 0.6;
+	}
+	100%{
+		opacity: 0;
+		transform: rotate(2turn)		
+	}
+}
+
+@keyframes animation3{
+	0%{
+		opacity: 0;
+	}
+	35%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes issou {
+    0%{
+        color: white;
+        transform: translateX(0px) translateY(0px);
+    }
+    4%{
+        transform: translateX(0px) translateY(5px);
+    }
+    8%{
+        transform: translateX(0px) translateY(0px);
+    }
+    12%{
+        transform: translateX(0px) translateY(5px);
+        color: red;   
+    }
+    16%{
+        transform: translateX(0px) translateY(0px);
+    }
+    20%{
+        transform: translateX(0px) translateY(5px);     
+    }
+    24%{
+        transform: translateX(0px) translateY(0px);
+    }
+    28%{
+        transform: translateX(0px) translateY(5px);
+    }
+    32%{
+        transform: translateX(0px) translateY(0px);
+    }
+    36%{
+        transform: translateX(0px) translateY(5px);
+    }
+    40%{
+        color: rgb(73, 1, 1);
+        transform: translateX(0px) translateY(0px);
+    }
+    80%{
+        transition-timing-function : cubic-bezier(0.075, 0.82, 0.165, 1);      
+        color: red;
+        transform: translateX(-40px) translateY(0px);       
+    }
+    100%{
+        color: red;
+        transform: translateX(350px) translateY(0px);      
+    }
+}
+
+@keyframes flamme{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.8;
+        transform: translateY(0px);
+    }
+    40%{
+        opacity: 0.2;
+    }
+    60%{
+        opacity: 0.8;
+        transition-timing-function : cubic-bezier(0.075, 0.82, 0.165, 1);       
+        transform: translateY(-10px);
+    }
+    80%{
+        opacity: 0.2;
+        transition-timing-function : cubic-bezier(0.075, 0.82, 0.165, 1);       
+        transform: translateY(-5px);
+    }
+    90%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+/* fin keyframe */
+/* début du code */
+
+
+/* début de la page accueil */
+
+/* début du header */
