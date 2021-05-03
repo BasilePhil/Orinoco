@@ -1,0 +1,58 @@
+orange : #E68A0A
+bleu : #945EF0
+mauve : #B36F98
+mélange : #C3776B
+
+https://us04web.zoom.us/j/77026516421?pwd=VU11ZUplcVdnaExQYmQ4L0dRT2JHQT09
+
+node server 
+
+npm install
+
+http://localhost:3000/api/teddies
+
+/*let tab = [10 ,12 , 15, 18];
+console.log(tab);
+for (const element of tab) { 
+    console.log(`note : ${element}`);
+    
+}
+
+let eleve = {
+    nom : "Basile",
+    prenom : "Paul",
+    age : 20,
+};
+
+
+
+
+
+/*début javascript */
+
+    let ours1 = {
+        nom : "nom1",
+        taille : "taille1",
+        couleur : "couleur1",
+    };
+    let ours2 = {
+        nom : "nom1",
+        taille : "taille1",
+        couleur : "couleur1",
+    };
+    let ours3 = {
+        nom : "nom1",
+        taille : "taille1",
+        couleur : "couleur1",
+    };
+    let ours4 = {
+        nom : "nom4",
+        taille : "taille4",
+        couleur : "couleur4",
+    };
+
+    let tablours = [ours1, ours2, ours3, ours4];
+
+    console.log(tablours);
+
+    window. notifciotn . hrf
