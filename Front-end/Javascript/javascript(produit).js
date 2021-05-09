@@ -9,7 +9,7 @@ function enleverPanier() {
 };
 
 function panierActuel() {
-    document.getElementById("panier").innerHTML += `${panier}`;
+    document.getElementById("panier").innerHTML = panier ;
 };
 
 function importerProduits() {

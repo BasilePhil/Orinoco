@@ -30,29 +30,6 @@ let eleve = {
 
 /*début javascript */
 
-    let ours1 = {
-        nom : "nom1",
-        taille : "taille1",
-        couleur : "couleur1",
-    };
-    let ours2 = {
-        nom : "nom1",
-        taille : "taille1",
-        couleur : "couleur1",
-    };
-    let ours3 = {
-        nom : "nom1",
-        taille : "taille1",
-        couleur : "couleur1",
-    };
-    let ours4 = {
-        nom : "nom4",
-        taille : "taille4",
-        couleur : "couleur4",
-    };
 
-    let tablours = [ours1, ours2, ours3, ours4];
-
-    console.log(tablours);
 
     window. notifciotn . hrf
