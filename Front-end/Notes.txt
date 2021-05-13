@@ -25,11 +25,9 @@ let eleve = {
 };
 
 
+local storage
 
 
 
-/*début javascript */
 
 
-
-    window. notifciotn . hrf
