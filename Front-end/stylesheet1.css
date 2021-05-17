@@ -1,7 +1,7 @@
 /*classes*/
 
 .grand{
-    height: 800px;
+    min-height: 800px;
 }
 
 .marge20bot{
@@ -19,6 +19,11 @@
 /*fin des classes*/
 
 /*spéciation*/
+
+h1#titre{
+    font-family: 'Original Surfer', cursive;
+}
+
 
 /*fin spéciation*/
 
@@ -209,6 +214,7 @@ div.orinoco4{
     div.orinoco4{
         display: block;
         position: fixed;
+        left: 15px;
         background: linear-gradient(180deg, #E68A0A, #945EF0);
         color: white;
         box-shadow: 0px 0px 20px 10px;
@@ -334,13 +340,15 @@ section#produit div#produit1{
     margin: auto;
     margin-top: 100px;
     border-radius: 30px;
-    overflow: hidden;
     box-shadow: 0px 0px 20px 3px #F3E9F1;
     display: flex;
+    flex-wrap: wrap;
 
 }
 section#produit div#produit1 div.img{
     width: 50%;
+    border-radius: 30px 0px 0px 30px;
+    overflow: hidden;
 }
 
 div#produit1 div.img img#image{
@@ -377,29 +385,59 @@ div.texte button#prix:hover{
     cursor: pointer;
 }
 
+div#couleur{
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+div#couleur p{
+    display: block;
+    border-top: solid #945EF0;
+    margin: 10px;
+    font-size: 1.2em;
+    transform: scale(1);
+    transition: all;
+    transition-duration: 500ms;
+}
+
+div#couleur p:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+div#couleur p:active ,div#couleur p:link{
+    border-top: solid #E68A0A;
+    color: black;
+}
+
 @media (max-width: 1190px){
     body section#produit div#produit1{
         background-color: white;
         width: 90%;
         min-width: 350px;
         margin: auto;
+        margin-bottom: 30px;
         margin-top: 30px;
         border-radius: 20px;
-        overflow: hidden;
         box-shadow: 0px 0px 20px 3px #F3E9F1;
     }
     body section#produit div#produit1 div.img{
         width: 100%;
         min-width: 350px;
         display: inline;
+        border-radius: 20px 20px 0px 0px;
     }
     body div.texte{
         width: 100%;
+        min-width: 350px;
         padding-left: 20px;
         padding-top: 10px;
         padding-bottom: 20px;
         display: block;
-    }   
+    }
+    div.texte button#prix{
+        margin-left: 25%;
+    }
 }
 
 /* fin page produit */

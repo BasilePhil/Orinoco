@@ -27,6 +27,21 @@ let eleve = {
 
 local storage
 
+let objJson = {
+    prenom : "dany",
+    age : 30,
+    taille : 170
+}
+let objLinea = JSON.stringify(objJson);
+localStorage.setItem("obj",objLinea);
+
+
+
+
+
+
+
+
 
 
 

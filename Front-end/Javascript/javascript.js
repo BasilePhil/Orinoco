@@ -52,7 +52,7 @@ function recupProduit() {
         </div>`;
         for (var couleur of data.colors) {
             document.getElementById("couleur").innerHTML += `
-            <p>${couleur}</p>`;
+            <p><a href="autre.html">${couleur}</a></p>`;
         }
     });
 }
@@ -60,22 +60,24 @@ function recupProduit() {
 /* fin des fonctions produits */
 /* début des fonctions paniers */
 
-var panier = 0;
-
-function panierActuel() {
-    document.getElementById("panier").innerHTML = panier ;
-};
+console.log(sessionStorage.getItem('panier'))
 
 function ajouterPanier() {
-    return panier = panier + 1 ;
+    var panier = sessionStorage.getItem('panier');
+    panier = panier + 1 ;
+    sessionStorage.setItem('panier', panier );
+    return console.log(sessionStorage.getItem('panier'))
 };
 
 function enleverPanier() {
-    return panier = panier - 1 ;
+    var panier = sessionStorage.getItem('panier');
+    panier = panier - 1 ;
+    sessionStorage.setItem('panier', panier );
+    return console.log(sessionStorage.getItem('panier'))
 };
 
 function panierActuel() {
-    document.getElementById("panier").innerHTML = `${panier}`;
+    document.getElementById("panier").innerHTML = `${sessionStorage.getItem('panier')}`;
 };
 
 /* fin des fonctions paniers */
