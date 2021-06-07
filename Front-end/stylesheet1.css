@@ -441,6 +441,13 @@ div#couleur p:active ,div#couleur p:link{
 }
 
 /* fin page produit */
+/* début page panier */
+
+h1#paniertitre {
+    margin-top: 20px;
+}
+
+/* fin page panier */
 /* début du footer */
 footer{
     background-color: #F3E9F1;

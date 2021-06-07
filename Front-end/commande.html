@@ -13,52 +13,80 @@
     <title>Commande</title>
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="Images/Logo3.png" alt="Logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Orinoco <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="panier.html">0 <i class="fas fa-shopping-bag"> Panier</i></a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Compte
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Se connecter</a>
-                    <a class="dropdown-item" href="#">Créer un compte</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Déconnexion</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#"><i class="fas fa-tools"></i></a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="search">
-                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-              </form>
-            </div>
-        </nav>
+<body onload="panierActuel(), recupUser()">
 
-    </header>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="Images/Logo3.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Orinoco <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="panier.html"><span id="panier"></span> <i class="fas fa-shopping-bag"> Panier</i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Compte
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Se connecter</a>
+                <a class="dropdown-item" href="#">Créer un compte</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Déconnexion</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#"><i class="fas fa-tools"></i></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="search">
+            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+    </nav>
 
-    <section class="grand couleur">
+  </header>
+
+  <section class="grand couleur">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1>Merci d'avoir commancé ici !</h1>
+                    <h1 class="blanc">Merci d'avoir commancé ici !</h1>
                 </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <form id="formq" action="http://localhost:3000/api/teddies/order" method="POST" onsubmit="validCommande()">
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" class="form-control" id="inputemail" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" class="form-control" id="inputfirstName" aria-describedby="#" placeholder="Enter your first name">
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" class="form-control" id="inputlastName" aria-describedby="#" placeholder="Enter yout last name">
+                  </div>
+                  <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" class="form-control" id="inputaddress" aria-describedby="#" placeholder="Enter your adresse">
+                  </div>
+                  <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" name="city" class="form-control" id="inputcity" aria-describedby="#" placeholder="Enter yout city">
+                  </div>
+                  <a href="panier.html"><button type="submit"  class="btn btn-primary">Finaliser la commande</button></a>
+                </form>
+              </div>
             </div>
         </div>
     </section>
